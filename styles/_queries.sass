@@ -1,0 +1,140 @@
+@media (min-width: 1200px)
+  // Header
+  .header
+
+    &__nav
+      padding: 4rem
+
+      &-hamburger
+        display: none
+      
+      &-menu
+        display: flex
+        &-graphic
+          display: none
+
+        &-list
+          display: flex
+          align-items: center
+
+          & .btn
+              border: 2px solid $dark-violet
+              color: $dark-violet
+
+              &:hover
+                  background-color: $dark-violet
+                  color: $white
+              
+          &-item
+            list-style: none
+            margin-left: 2rem
+
+            & a
+              color: $dark-grayish-violet
+              text-decoration: none
+            
+    // Content
+    &__main
+      align-items: center
+      flex-direction: row-reverse 
+      height: 85vh
+      position: relative
+      background-color: $dark-violet
+      justify-content: center
+      padding: 12rem
+
+      &::before
+          content: ""
+          position: absolute
+          top: 10%
+          left: 5%
+          width: 10%
+          height: 1px
+          background: $white
+
+      &-cta
+        justify-self: flex-start
+        background: none
+        flex: 3
+        text-align: left
+        padding: 0
+
+        &-topGraphic
+          position: absolute
+          top: 75%
+          left: 0
+
+        &-bottomGraphic
+          position: absolute
+          top: 0
+          right: 0
+          z-index: 1
+
+        &-headline
+          width: 100%
+          font-size: 7rem
+
+      &-img
+        flex: 4
+        margin-left: 10rem
+        transform: translateY(10%)
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 2
+
+        & img
+          margin: auto
+          width: 90%
+
+  .process
+    padding: 12rem
+
+    &__headline
+      align-self: flex-start
+
+      &::before
+        left: 12%
+        top: -50%
+
+    &__list
+      display: flex
+      justify-content: space-around
+
+      &-item
+        align-items: flex-start
+        text-align: left
+
+  .work
+    flex-direction: row
+    overflow: hidden
+    justify-content: center
+
+    &__headline
+      margin-bottom: 0
+      text-align: left
+      margin-right: 10rem
+
+  // Footer
+
+  .footer
+    &__social
+      flex-direction: row
+      justify-content: space-between
+
+    &__links
+      display: flex
+      justify-content: flex-start
+      width: 100%
+
+      &-group
+        margin-right: 15rem
+        align-items: flex-start
+
+        &-list
+          align-items: flex-start
+          line-height: 3rem
+    
+        
+        
+            

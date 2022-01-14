@@ -1,0 +1,38 @@
+.process
+  align-items: center
+  display: flex
+  flex-direction: column
+  padding: 4rem
+  margin-top: 10rem
+
+  &__headline
+    font-size: 4rem
+    font-family: 'DM Serif Display', serif
+    position: relative
+
+    &::before
+      background: $dark-grayish-violet
+      content: ""
+      height: 1px
+      width: 30%
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%, 0)
+  
+  &__list
+    &-item
+      align-items: center
+      display: flex
+      flex-direction: column
+      margin: 6rem 0
+      text-align: center
+
+      &-headline
+        font-size: 2.5rem
+        font-weight: bold
+        margin: 2rem 0
+      
+      &-description
+        line-height: 2.5rem
+        width: 80%

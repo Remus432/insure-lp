@@ -1,0 +1,97 @@
+// == Header Component ==
+.header
+  // Nav Section
+  &__nav
+    align-items: center
+    display: flex
+    justify-content: space-between
+    padding: 2rem
+
+    &-menu-graphic
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+
+    & img
+      z-index: 4
+
+    &-hamburger
+      cursor: pointer
+    
+  // Content Section
+  &__main
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    &-img
+      line-height: 0
+
+      & img
+        width: 100%
+    
+    &-cta
+      background-color: $dark-violet
+      color: $white
+      padding: 4rem
+      text-align: center
+      position: relative
+      overflow: hidden
+
+      &-topGraphic
+        position: absolute
+        top: 89%
+        left: 0
+        z-index: 2
+
+      &-bottomGraphic
+        position: absolute
+        bottom: -50%
+        right: 0
+
+
+      &-headline
+        font-family: 'DM Serif Display', serif
+        margin: auto
+        width: 55%
+
+      &-description
+        opacity: .7
+        line-height: 3rem
+        margin-top: 1rem
+      
+      &-btn
+        margin: 2rem 0
+
+.hasOverflow
+  overflow: hidden
+
+.hide
+  display: none
+
+.active
+  background-color: $dark-violet
+  display: grid
+  place-content: center
+  position: fixed
+  top: 0
+  width: 100%
+  left: 0
+  height: 100%
+  z-index: 3
+  text-align: center
+
+  & ul
+    transform: translateY(-150px)
+    width: 100%
+  
+  & li 
+    list-style: none
+    margin: 4rem 0
+
+    & a
+      color: #fff
+      text-decoration: none
+      font-size: 3rem
+

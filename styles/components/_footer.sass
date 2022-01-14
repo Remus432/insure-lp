@@ -1,0 +1,52 @@
+.footer
+  align-items: center
+  background: $very-light-gray
+  display: flex
+  flex-direction: column
+  padding: 4rem
+  margin-top: 10rem
+  position: relative
+
+  &__social
+    align-items: center
+    border-bottom: 1px solid lighten($dark-grayish-violet, 10%)
+    display: flex
+    flex-direction: column
+    padding: 4rem 0 2rem 0
+    width: 100%
+
+    &-graphic
+      position: absolute
+      top: 0
+      left: 0
+
+    &-icons
+      & img 
+        margin: 0 1rem
+        cursor: pointer
+
+    & img
+      margin-bottom: 3rem
+
+  &__links
+    margin-top: 2rem
+
+    &-group
+      align-items: center
+      display: flex
+      flex-direction: column
+      font-weight: bold
+      margin: 2rem 0
+
+      &-headline
+        color: lighten($dark-grayish-violet, 10%)
+
+      &-list
+        align-items: center
+        display: flex
+        flex-direction: column
+        margin: 2rem 0
+
+        &-item
+          cursor: pointer
+          list-style: none
